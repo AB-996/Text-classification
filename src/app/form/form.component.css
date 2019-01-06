@@ -1,0 +1,55 @@
+mat-card {
+  height: 50%;
+  /* margin-top:2%; */
+  text-align: center;
+  width:80%;
+  margin:auto;
+}
+
+
+textarea {
+  width:90%;
+}
+form{
+  margin:auto;
+}
+.wrapper{
+  background-color: rgba(169,169,169,0.2);
+  height:100%;
+}
+.spacer {
+  flex: 1 1 auto;
+}
+
+mat-toolbar {
+  background-color: transparent;
+  margin-top:5%;
+}
+
+mat-button {
+  background-color: transparent;
+}
+
+.question {
+  width:100%;
+  text-align: center;
+  margin-bottom:2%;
+  padding-top:2%;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2em;
+}
+
+button {
+  width:45%;
+}
+
+mat-form-field {
+  width:50%;
+}
+
+@media screen and (max-width: 400px){
+  .question {
+    font-size:1em;
+  }
+}
+

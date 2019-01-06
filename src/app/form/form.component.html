@@ -1,0 +1,26 @@
+<div class="wrapper" *ngIf = "i < questions.length, else analysing" >
+  <div class="question">{{questions[i]}}</div>
+  <form #form = "ngForm" (ngSubmit) = "goNext(form)">
+    <mat-card>
+        <mat-form-field>
+            <textarea matInput name="answer"
+            type="text"
+            rows="15"
+            placeholder="Enter your answer here"
+            required
+            [(ngModel)] = "inputText"
+            #textarea>
+          </textarea>
+          </mat-form-field>
+    </mat-card>
+    <mat-toolbar>
+        <button mat-button (click)="goBack()" type="button" color="primary">Back</button>
+        <span class="spacer"></span>
+        <button type="submit" mat-button color="primary">Next</button>
+    </mat-toolbar>
+  </form>
+</div>
+
+<ng-template #analysing>
+  <app-loading></app-loading>
+</ng-template>
